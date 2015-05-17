@@ -118,8 +118,8 @@ ggplot(data=averages, aes(x=interval, y=steps)) +
 <pre class="r"><code>length(which(is.na(data$steps)))</code></pre>
 <pre><code>## [1] 2304</code></pre>
 </div>
-<div id="create-new-dataset-by-filling-in-all-of-the-missing-values-in-the-dataset." class="section level5">
-<h5>2. Create new dataset by filling in all of the missing values in the dataset.</h5>
+<div id="create-new-dataset-by-filling-in-all-of-the-missing-values-in-the-dataset-using-multivariate-imputation-by-chained-equations-mice" class="section level5">
+<h5>2. Create new dataset by filling in all of the missing values in the dataset using “Multivariate Imputation by Chained Equations (MICE)”</h5>
 <pre class="r"><code>dataImputed &lt;- complete(mice(data))</code></pre>
 </div>
 <div id="recreate-histogram-of-the-total-number-of-steps-taken-each-day-with-the-new-dataset" class="section level5">

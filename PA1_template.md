@@ -79,7 +79,7 @@ length(which(is.na(data$steps)))
 ## [1] 2304
 ```
 
-##### 2. Create new dataset by filling in all of the missing values in the dataset.
+##### 2. Create new dataset by filling in all of the missing values in the dataset using "Multivariate Imputation by Chained Equations (MICE)"
 
 ```r
 dataImputed <- complete(mice(data))
